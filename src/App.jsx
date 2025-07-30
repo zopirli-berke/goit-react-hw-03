@@ -15,6 +15,20 @@ function App() {
   const [contacts, setContacts] = useState(initialContacts);
   const [filter, setFilter] = useState("");
 
+  const addContact = (newContact) => {
+    setContacts((prevContacts) => {
+      const isDuplicate = prevContacts.some(
+        (contact) =>
+          contact.name.toLowerCase() === newContact.name.toLowerCase()
+      );
+      if (isDuplicate) {
+        alert(`${newContact.name} is already in contacts.`);
+        return prevContacts;
+      }
+      return [...prevContacts, newContact];
+    });
+  };
+
   const deleteContact = (contactId) => {
     setContacts((prevContacts) => {
       return prevContacts.filter((contact) => contact.id !== contactId);
@@ -28,7 +42,7 @@ function App() {
   return (
     <div>
       <h1>Phonebook</h1>
-      {/* <ContactForm /> */}
+      <ContactForm onAdd={addContact} />
       <SearchBox value={filter} onFilter={setFilter} />
       <ContactList contacts={visibleContacts} onDelete={deleteContact} />
     </div>

@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  text-align: start;
+}
+
+.field {
+  width: 257px;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.error {
+  color: red;
+}
