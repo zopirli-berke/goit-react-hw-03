@@ -1,0 +1,19 @@
+.contactBox {
+  display: flex;
+  gap: 20px;
+}
+
+.deleteBtn {
+  padding: 5px;
+  height: 50px;
+  margin-top: 24px;
+}
+
+.name,
+.number {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+  text-align: start;
+}

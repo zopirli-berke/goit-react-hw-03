@@ -1,0 +1,16 @@
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactList {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  text-align: left;
+}
