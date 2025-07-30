@@ -5,6 +5,7 @@
   list-style: none;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
 .contactList {
@@ -13,4 +14,5 @@
   padding: 10px;
   display: flex;
   text-align: left;
+  width: 235px;
 }

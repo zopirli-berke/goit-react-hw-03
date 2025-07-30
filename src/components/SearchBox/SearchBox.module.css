@@ -1,0 +1,16 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.searchInput {
+  width: 257px;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+}

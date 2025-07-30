@@ -3,7 +3,7 @@ import { HiPhone, HiUser } from "react-icons/hi";
 
 export default function Contact({ id, name, number, onDelete }) {
   return (
-    <div className={css.contactBox}>
+    <div className={css.contactWrapper}>
       <div className={css.infoWrapper}>
         <p className={css.name}>
           <HiUser />
